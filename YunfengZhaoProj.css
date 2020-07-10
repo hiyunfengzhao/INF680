@@ -1,0 +1,185 @@
+/* global */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.grid-2{
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;}
+
+
+
+body{
+  padding: 10;
+  background-color: rgb(54, 11, 11);
+  font-family: 'Open Sans', sans-serif;
+  cursor: default;
+  min-height:100%;
+
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: auto auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em;
+    animation:
+      typing 2.8s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+h2,.white{
+    color: rgb(255, 255, 255);
+}
+
+
+/* section 1 */
+.section-1{
+    margin:auto;
+    padding-top: 20vh;
+    padding-left: 20vw;
+    padding-right: 5vh;
+    text-align: center;
+}
+
+.section-1 p{
+    font-size: 0.7rem;
+    padding-bottom: 10px;
+    margin:0;
+    color:rgb(8, 8, 8);
+}
+
+
+.section-1 h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: rgb(226, 225, 225);
+}
+
+.section-1 a{
+    font-size: 1.5rem;
+    padding: 15px;
+    color:#55ACEE;
+    text-decoration: none;
+}
+
+a.btn {
+    margin-top:10px;
+    display:inline-flex;
+    text-shadow: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    padding:7px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    color:#FFF;
+    background-color:#008CBA;
+}
+
+
+
+img {
+    border-radius:50%;
+}
+
+.fa-linkedin {
+    color: rgb(172, 172, 172);
+  }
+
+.fa-linkedin:hover {
+    color: #ffffff;
+}
+.fa-facebook {
+    color: rgb(172, 172, 172);
+  }
+
+.fa-facebook:hover {
+    color:#052c74;
+  }
+
+.fa-github {
+    color:rgb(172, 172, 172);
+    border-radius: 50%;
+  }
+
+.fa-github:hover {
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+
+/* section 2 */
+.section-2{
+    padding-top: 20vh;
+    width: 80%;
+}
+
+.section-2 h2{
+   
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+.section-2 p,ul{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+    word-spacing: 3px;
+    color:rgb(161, 160, 160);
+}
+
+.section-2 a{
+    display: block;
+    padding: 5px;
+    font-size: 1.1rem;
+    padding-left: 0;
+    width: auto;
+    color:rgb(134, 134, 134);
+    text-decoration: none;
+}
+/* animations / utilities */
+
+.section-1 a:hover{
+    color: rgb(15, 4, 63);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* media queres */
+@media(max-width:767px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .section-1{
+        padding:0;
+        padding-top: 5rem;
+    }
+    .section-2{
+        padding: 0;
+        width:90%;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+
+    .section-1 h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color:rgb(172, 172, 172);
+    }
+
+
+}
